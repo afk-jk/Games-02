@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Game Hub</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #111827;
+      color: #f9fafb;
+      margin: 0;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+    p {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 15px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .card {
+      background: #1f2937;
+      border-radius: 10px;
+      padding: 15px;
+      text-align: center;
+      text-decoration: none;
+      color: inherit;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.6);
+    }
+    .card span {
+      display: block;
+      font-size: 1rem;
+      font-weight: 600;
+      margin-bottom: 5px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Game Hub</h1>
+  <p>Click a game to start playing.</p>
+
+  <div class="grid">
+    <!-- Change these hrefs to match your folder names -->
+    <a class="card" href="10-minutes-till-dawn/">
+      <span>10 Minutes Till Dawn</span>
+      <small>Top-down shooter</small>
+    </a>
+
+    <a class="card" href="2048/">
+      <span>2048</span>
+      <small>Number puzzle</small>
+    </a>
+
+    <a class="card" href="2048-multitask/">
+      <span>2048 Multitask</span>
+      <small>Hard mode 2048</small>
+    </a>
+
+    <a class="card" href="DogeMiner/">
+      <span>Doge Miner</span>
+      <small>Idle clicker</small>
+    </a>
+
+    <!-- Add more cards for each folder you want -->
+  </div>
+</body>
+</html>
